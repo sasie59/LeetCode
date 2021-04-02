@@ -1,15 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { HashRouter, Switch, Route } from 'react-router-dom';
+
+import HomePage from './HomePage';
+import LC7 from './LC7'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
-    </div>
+    <HashRouter>
+      <Switch>
+        <Route path='/LC7'><LC7 /></Route>
+        <Route path='/'><HomePage /></Route>
+      </Switch>
+    </HashRouter>
   );
 }
 
