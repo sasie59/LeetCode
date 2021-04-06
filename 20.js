@@ -27,4 +27,6 @@ var isValid = function (s) {
   return res.length === 0;
 };
 
-console.log(isValid("()[]{}"));
+console.log(isValid("()[{}]"));
+console.log(isValid("()[{]}"));
+console.log(isValid("([{}])"));
